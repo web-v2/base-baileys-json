@@ -1,0 +1,464 @@
+[handleMsg]:  {
+  key: {
+    remoteJid: '573024227366@s.whatsapp.net',
+    fromMe: false,
+    id: '318DDE7908D0CA89E6A6DC60BDFE6B40',
+    participant: undefined
+  },
+  messageTimestamp: 1713912226,
+  pushName: 'Maria Lucia 💕💕',
+  broadcast: false,
+  message: Message {
+    conversation: 'Hola',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: 'Hola',
+  from: '573024227366'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_d82893a6-2e7c-43c9-9e6d-a205974f4fbe',
+  keyword: 'key_cfbb88a2-315b-452a-a3d0-caac09f16cc8',
+  answer: '🤖 Hola bienvenido a este *Chatbot*',
+  options: {
+    media: null,
+    buttons: [],
+    capture: false,
+    child: null,
+    delay: 0,
+    idle: null,
+    ref: null,
+    nested: [],
+    keyword: {},
+    callback: false
+  },
+  refSerialize: '561d8d79463b0e4271307fb3824a4ddf'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_abc089fb-0756-4e0c-9f7e-e71530f1e59a',
+  keyword: 'ans_d82893a6-2e7c-43c9-9e6d-a205974f4fbe',
+  answer: 'Escoje una opción\n' +
+    '👉 *1* para ver los productos\n' +
+    '👉 *2*  para ver los horarios de atención\n' +
+    '👉 *3*  para ver la dirección donde nos encontramos\n' +
+    '👉 *4*  para ver información de contactos y empresa\n' +
+    '👉 *5*  para realizar un pedido',
+  options: {
+    media: null,
+    buttons: [],
+    capture: false,
+    child: null,
+    delay: 0,
+    idle: null,
+    ref: null,
+    nested: [
+      [Object], [Object],
+      [Object], [Object],
+      [Object], [Object],
+      [Object], [Object],
+      [Object], [Object],
+      [Object], [Object],
+      [Object], [Object],
+      [Object]
+    ],
+    keyword: {},
+    callback: false
+  },
+  refSerialize: 'f6af3f70367788382aee9a63755d6c51'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '573024227366@s.whatsapp.net',
+    fromMe: false,
+    id: '6A77EFE9C88BB42B66F54A5F9382947F',
+    participant: undefined
+  },
+  messageTimestamp: 1713912238,
+  pushName: 'Maria Lucia 💕💕',
+  broadcast: false,
+  message: Message {
+    conversation: '1',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: '1',
+  from: '573024227366'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_615dd30e-49cc-4f1b-9b46-32e192b064b4',
+  keyword: 'key_5a27852a-a006-40fb-a681-66947643466a',
+  answer: '💥 *Listado de productos* 💥',
+  options: {
+    media: null,
+    buttons: [],
+    capture: false,
+    child: null,
+    delay: 0,
+    idle: null,
+    ref: null,
+    nested: [],
+    keyword: {},
+    callback: false
+  },
+  refSerialize: 'b0fcd4c69d143d3fb8829ea101b18e7b'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_999feee4-264b-4b40-a6b4-f0b67ea52b99',
+  keyword: 'ans_615dd30e-49cc-4f1b-9b46-32e192b064b4',
+  answer: '1 - Costeñitas - Caja x 38 - *$80.000* - c/u *$3.000*\n' +
+    '2 - Aguila Negra - Caja x 30 - *$75.000* - c/u *$3.000*\n' +
+    '3 - Aguila Light - Caja x 30 - *$75.000* - c/u *$3.000*\n' +
+    '4 - Nativa - Caja x 30 - *$60.000* - c/u *$2.000*\n' +
+    '5 - Club Colombia - Caja x 30 - *$85.000* - c/u *$4.000*\n' +
+    '👉*Menu*',
+  options: {
+    media: null,
+    buttons: [],
+    capture: false,
+    child: null,
+    delay: 0,
+    idle: null,
+    ref: null,
+    nested: [],
+    keyword: {},
+    callback: false
+  },
+  refSerialize: '2db139dd07308761ecb46032d4d0093c'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '573024227366@s.whatsapp.net',
+    fromMe: false,
+    id: '31F5D9C3E18C1201ED8972E75ED79E08',
+    participant: undefined
+  },
+  messageTimestamp: 1713912246,
+  pushName: 'Maria Lucia 💕💕',
+  broadcast: false,
+  message: Message {
+    conversation: 'Menú',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: 'Menú',
+  from: '573024227366'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '573024227366@s.whatsapp.net',
+    fromMe: false,
+    id: '5735244F28E077F813986463B0F429EF',
+    participant: undefined
+  },
+  messageTimestamp: 1713912259,
+  pushName: 'Maria Lucia 💕💕',
+  broadcast: false,
+  message: Message {
+    conversation: 'Menu',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: 'Menu',
+  from: '573024227366'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_d82893a6-2e7c-43c9-9e6d-a205974f4fbe',
+  keyword: 'key_cfbb88a2-315b-452a-a3d0-caac09f16cc8',
+  answer: '🤖 Hola bienvenido a este *Chatbot*',
+  options: {
+    media: null,
+    buttons: [],
+    capture: false,
+    child: null,
+    delay: 0,
+    idle: null,
+    ref: null,
+    nested: [],
+    keyword: {},
+    callback: false
+  },
+  refSerialize: '561d8d79463b0e4271307fb3824a4ddf'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_abc089fb-0756-4e0c-9f7e-e71530f1e59a',
+  keyword: 'ans_d82893a6-2e7c-43c9-9e6d-a205974f4fbe',
+  answer: 'Escoje una opción\n' +
+    '👉 *1* para ver los productos\n' +
+    '👉 *2*  para ver los horarios de atención\n' +
+    '👉 *3*  para ver la dirección donde nos encontramos\n' +
+    '👉 *4*  para ver información de contactos y empresa\n' +
+    '👉 *5*  para realizar un pedido',
+  options: {
+    media: null,
+    buttons: [],
+    capture: false,
+    child: null,
+    delay: 0,
+    idle: null,
+    ref: null,
+    nested: [
+      [Object], [Object],
+      [Object], [Object],
+      [Object], [Object],
+      [Object], [Object],
+      [Object], [Object],
+      [Object], [Object],
+      [Object], [Object],
+      [Object]
+    ],
+    keyword: {},
+    callback: false
+  },
+  refSerialize: 'f6af3f70367788382aee9a63755d6c51'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '573024227366@s.whatsapp.net',
+    fromMe: false,
+    id: '63369F37E1F5446F2E14537B6EBB662B',
+    participant: undefined
+  },
+  messageTimestamp: 1713912265,
+  pushName: 'Maria Lucia 💕💕',
+  broadcast: false,
+  message: Message {
+    conversation: '5',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: '5',
+  from: '573024227366'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_66084167-3abe-4009-af5f-c47cc697198b',
+  keyword: 'key_b0a9d7d7-d182-4e31-92a3-25585018b5b4',
+  answer: '💯 *Realiza tu pedido* 💯',
+  options: {
+    media: null,
+    buttons: [],
+    capture: false,
+    child: null,
+    delay: 0,
+    idle: null,
+    ref: null,
+    nested: [],
+    keyword: {},
+    callback: false
+  },
+  refSerialize: '82a59ade3358259e4085871dcd296f89'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_f60a855a-7835-4917-a16f-315957c0d4cc',
+  keyword: 'ans_66084167-3abe-4009-af5f-c47cc697198b',
+  answer: '👉 *A* - Costeñitas - Caja x 38 - *$80.000*\n' +
+    '👉 *B* - Aguila Negra - Caja x 30 - *$75.000*\n' +
+    '👉 *C* - Aguila Light - Caja x 30 - *$75.000*\n' +
+    '👉 *D* - Nativa - Caja x 30 - *$60.000*\n' +
+    '👉 *E* - Club Colombia - Caja x 30 - *$85.000*\n' +
+    '👉*Menu*',
+  options: {
+    media: null,
+    buttons: [],
+    capture: false,
+    child: null,
+    delay: 0,
+    idle: null,
+    ref: null,
+    nested: [
+      [Object], [Object], [Object],
+      [Object], [Object], [Object],
+      [Object], [Object], [Object],
+      [Object], [Object], [Object],
+      [Object], [Object], [Object],
+      [Object], [Object], [Object],
+      [Object], [Object]
+    ],
+    keyword: {},
+    callback: false
+  },
+  refSerialize: 'a51196c8b621ce2c03192e4fbdcbd815'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '573024227366@s.whatsapp.net',
+    fromMe: false,
+    id: '588DEBBA8187A359369AE0207DFEE6D2',
+    participant: undefined
+  },
+  messageTimestamp: 1713912272,
+  pushName: 'Maria Lucia 💕💕',
+  broadcast: false,
+  message: Message {
+    conversation: 'E',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: 'E',
+  from: '573024227366'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_2ff69ebf-96be-4a31-944f-2fbde170f961',
+  keyword: 'key_a703e0ff-2e6b-4494-83c6-afc72f2c2f40',
+  answer: '💯 *E* - Club Colombia - Caja x 30 - *$85.000* 💯',
+  options: {
+    media: null,
+    buttons: [],
+    capture: false,
+    child: null,
+    delay: 0,
+    idle: null,
+    ref: null,
+    nested: [],
+    keyword: {},
+    callback: false
+  },
+  refSerialize: '1eb1b4b46d0b27c8712d8ef98edb9d84'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_a1adf5f8-423f-41fa-8428-db483c867d84',
+  keyword: 'ans_2ff69ebf-96be-4a31-944f-2fbde170f961',
+  answer: 'Formas de pago:',
+  options: {
+    media: null,
+    buttons: [],
+    capture: false,
+    child: null,
+    delay: 0,
+    idle: null,
+    ref: null,
+    nested: [],
+    keyword: {},
+    callback: false
+  },
+  refSerialize: '4ca252a9382edefa0b004baf68630952'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_cc45dee2-43a4-420f-a76d-f830d6fcda2c',
+  keyword: 'ans_a1adf5f8-423f-41fa-8428-db483c867d84',
+  answer: '👉 Efectivo\n👉 Nequi\n👉 Daviplata\n👉*Menu*',
+  options: {
+    media: null,
+    buttons: [],
+    capture: false,
+    child: null,
+    delay: 0,
+    idle: null,
+    ref: null,
+    nested: [
+      [Object], [Object],
+      [Object], [Object],
+      [Object], [Object],
+      [Object], [Object],
+      [Object], [Object],
+      [Object], [Object],
+      [Object]
+    ],
+    keyword: {},
+    callback: false
+  },
+  refSerialize: '53671ddb793f3d140671371057f67a88'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '573024227366@s.whatsapp.net',
+    fromMe: false,
+    id: '76FC12522E51A7D56822DC0102183147',
+    participant: undefined
+  },
+  messageTimestamp: 1713912278,
+  pushName: 'Maria Lucia 💕💕',
+  broadcast: false,
+  message: Message {
+    conversation: 'Nequi',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: 'Nequi',
+  from: '573024227366'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_9ecd04a9-a066-4210-8be7-7e49e6804941',
+  keyword: 'key_46d338d9-691d-4230-a4c3-044c9759a375',
+  answer: 'Nequi: *3136745356*',
+  options: {
+    media: null,
+    buttons: [],
+    capture: false,
+    child: null,
+    delay: 0,
+    idle: null,
+    ref: null,
+    nested: [],
+    keyword: {},
+    callback: false
+  },
+  refSerialize: '8516d0f910fef17e4b6ef1623e7e1e3d'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_c31dc146-a2f2-483f-9731-b147dc1aa70f',
+  keyword: 'ans_9ecd04a9-a066-4210-8be7-7e49e6804941',
+  answer: 'Nombre: *Fernando Yepez*',
+  options: {
+    media: null,
+    buttons: [],
+    capture: false,
+    child: null,
+    delay: 0,
+    idle: null,
+    ref: null,
+    nested: [],
+    keyword: {},
+    callback: false
+  },
+  refSerialize: 'f53e3cc9534315798db112e008ff07bc'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_98edcc94-de0e-4d1f-8c60-71cfe871f5ad',
+  keyword: 'ans_c31dc146-a2f2-483f-9731-b147dc1aa70f',
+  answer: 'Gracias por comunicarte, pronto te llamaremos para finalizar el proceso',
+  options: {
+    media: null,
+    buttons: [],
+    capture: false,
+    child: null,
+    delay: 0,
+    idle: null,
+    ref: null,
+    nested: [],
+    keyword: {},
+    callback: false
+  },
+  refSerialize: '1435d030d380d12e4e3e07709fd72839'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_798559b1-d7cd-43d2-a867-d63d56001684',
+  keyword: 'ans_98edcc94-de0e-4d1f-8c60-71cfe871f5ad',
+  answer: '👉*Menu*',
+  options: {
+    media: null,
+    buttons: [],
+    capture: false,
+    child: null,
+    delay: 0,
+    idle: null,
+    ref: null,
+    nested: [],
+    keyword: {},
+    callback: false
+  },
+  refSerialize: 'fe5028bab7e6c98d494115d55e602aaf'
+}
