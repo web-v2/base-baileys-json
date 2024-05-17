@@ -4,6 +4,11 @@ const QRPortalWeb = require('@bot-whatsapp/portal')
 const BaileysProvider = require('@bot-whatsapp/provider/baileys')
 const MockAdapter = require('@bot-whatsapp/database/mock')
 
+const fs = require('fs');
+//import sendMessageIA from './ia.js';
+//const { sendMessageIA } = require('./ia.js');
+
+
 const flowSecundario = addKeyword(['2', 'siguiente']).addAnswer(['📄 Aquí tenemos el flujo secundario'])
 
 const flowGracias = addKeyword(['gracias', 'grac']).addAnswer(
@@ -165,6 +170,18 @@ const flowPedidos = addKeyword(['5', 'pedidos'])
     [flowPedidoA, flowPedidoB, flowPedidoC, flowPedidoD, flowPedidoE]
 )
 
+let r = '';
+const flowGPT = addKeyword(['6'])
+        .addAnswer('🤖 *Realiza tu consulta a la IA* 🤖', {capture: true}, async (ctx, {flowDynamic}) => {
+            let textSolicitud = ctx.body
+            console.log({ textSolicitud: ctx.body })
+            r = await sendMessageIA(textSolicitud)
+            console.log('Respuesta IA: '+ r)   
+            console.log('***Fin respuesta IA***')     
+            return  'Respuesta IA: '+ r 
+        })        
+        .addAnswer('🤖🤖 Gracias por tu participacion');
+
 const flowPrincipal = addKeyword(['Menu', 'hola', 'ole', 'alo' , 'Hola', 'menu'])
     .addAnswer('🤖 Hola bienvenido a este *Chatbot*')
     .addAnswer(
@@ -175,10 +192,11 @@ const flowPrincipal = addKeyword(['Menu', 'hola', 'ole', 'alo' , 'Hola', 'menu']
             '👉 *3*  para ver la dirección donde nos encontramos',
             '👉 *4*  para ver información de contactos y empresa',
             '👉 *5*  para realizar un pedido',
+            '👉 *6*  para realizar una consulta a la IA',
         ],
         null,
         null,
-        [flowProductos, flowHorarios, flowDireccion, flowEmpresa, flowPedidos]
+        [flowProductos, flowHorarios, flowDireccion, flowEmpresa, flowPedidos, flowGPT]
 )
 
 
@@ -201,3 +219,50 @@ const main = async () => {
 }
 
 main()
+
+
+
+
+async function fetchChatGPTResponse(message) {
+
+    const options = {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        Authorization:
+          "Bearer gAAAAABmMF89uVU6D1xtnTQOBsntvHIkdAtwhR-j5E1la_aFagT67Rs8V3C3-hOOdI3PgEPHCCNck8vpXtiWJen1oKVFAzfe5es8WHfBH4Xql4-8uazZHGBtv8LWa-ca8_Ewd1Cu2lTd",
+      },
+      body: JSON.stringify({
+        formality: "default",
+        max_tokens: 2048,
+        model: "chat-sophos-1",
+        n: 1,
+        source_lang: "es",
+        target_lang: "es",
+        temperature: 0.7,
+        text: message,
+      }),
+    };
+    let r = "";
+    const resp = await fetch(
+      "https://api.textcortex.com/v1/texts/expansions",
+      options
+    )
+      .then((response) => response.json())
+      .then((response) => (r = response.data.outputs[0].text.trim()))
+      .catch((err) => console.error(err));
+    //console.log(r);
+    return r;
+  }
+
+
+async function sendMessageIA(message) {        
+    if (message === "") return;
+    let responseIA = "";
+    try {
+      responseIA = await fetchChatGPTResponse(message);
+    } catch (error) {
+      console.error("Error:", error.message);
+    }
+    return responseIA;
+  }
