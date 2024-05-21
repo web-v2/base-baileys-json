@@ -5,6 +5,7 @@ const BaileysProvider = require('@bot-whatsapp/provider/baileys')
 const MockAdapter = require('@bot-whatsapp/database/mock')
 
 const fs = require('fs');
+const { cleanMessage } = require('@whiskeysockets/baileys');
 //import sendMessageIA from './ia.js';
 //const { sendMessageIA } = require('./ia.js');
 
@@ -170,19 +171,28 @@ const flowPedidos = addKeyword(['5', 'pedidos'])
     [flowPedidoA, flowPedidoB, flowPedidoC, flowPedidoD, flowPedidoE]
 )
 
-let r = '';
+var respAI = '';
 const flowGPT = addKeyword(['6'])
-        .addAnswer('🤖 *Realiza tu consulta a la IA* 🤖', {capture: true}, async (ctx, {flowDynamic}) => {
-            let textSolicitud = ctx.body
-            console.log({ textSolicitud: ctx.body })
-            r = await sendMessageIA(textSolicitud)
-            console.log('Respuesta IA: '+ r)   
-            console.log('***Fin respuesta IA***')     
-            return  'Respuesta IA: '+ r 
-        })        
-        .addAnswer('🤖🤖 Gracias por tu participacion');
+.addAnswer('🤖 *Realiza tu consulta a la IA* 🤖', {capture: true}, async (ctx, {flowDynamic}) => {
+    let textSolicitud = ctx.body;
+    console.log({ textSolicitud: ctx.body });
+    let respAI = await sendMessageIA(textSolicitud);
 
-const flowPrincipal = addKeyword(['Menu', 'hola', 'ole', 'alo' , 'Hola', 'menu'])
+    await new Promise((resolve) => {
+        setTimeout(() => {
+            console.log('Respuesta IA: ' + respAI);
+            console.log('***Fin respuesta IA***');
+            resolve();
+        }, 5000);
+    });
+
+    await flowDynamic('Respuesta IA: ' + respAI);
+})
+.addAnswer('🤖🤖 Gracias por tu participacion')
+.addAnswer(['👉*Menu*']);
+
+
+const flowPrincipal = addKeyword(['Menu', 'hola', 'ole', 'alo' , 'Hola', 'menu' , 'menú', 'Menú'])
     .addAnswer('🤖 Hola bienvenido a este *Chatbot*')
     .addAnswer(
         [
